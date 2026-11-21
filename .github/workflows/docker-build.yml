@@ -47,5 +47,10 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
 
+      - name: List Docker image labels
+        run: |
+          docker image inspect "demoapi_py:${{ steps.app-version.outputs.version }}" \
+            --format '{{range $key, $value := .Config.Labels}}{{$key}}={{$value}}{{println}}{{end}}'
+
       - name: List Docker images
         run: docker image ls
