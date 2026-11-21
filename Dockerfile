@@ -1,5 +1,6 @@
-FROM python:3.14-slim
+FROM python:3.14-sli
 
+# OCI Image Metadata
 LABEL org.opencontainers.image.title="demoapi_py" \
       org.opencontainers.image.description="FastAPI demo application" \
       org.opencontainers.image.source="https://github.com/rrlabz/demoapi_py" \
