@@ -1,5 +1,9 @@
 FROM python:3.14-slim
 
+LABEL org.opencontainers.image.title="demoapi_py"
+LABEL org.opencontainers.image.description="FastAPI demo application"
+LABEL org.opencontainers.image.source="https://github.com/rrlabz/demoapi_py"
+
 WORKDIR /app
 
 COPY requirements.txt .
