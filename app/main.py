@@ -4,7 +4,7 @@ from fastapi import FastAPI
 app = FastAPI(title="Demo API")
 
 
-@app.get("/home")
+@app.get("/")
 def home() -> dict[str, str]:
     return {"message": "Welcome to the Demo API"}
 

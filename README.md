@@ -13,3 +13,5 @@ uvicorn app.main:app --reload
 
 - `GET /home` - returns a welcome message
 - `GET /healthcheck` - returns the service health status
+
+python -m pytest -v
