@@ -1,10 +1,10 @@
 FROM python:3.14-slim
 
 # OCI Image Metadata
-LABEL org.opencontainers.image.title="demoapi_py" \
-      org.opencontainers.image.description="FastAPI demo application" \
-      org.opencontainers.image.source="https://github.com/rrlabz/demoapi_py" \
-      org.opencontainers.image.licenses="MIT"
+LABEL org.opencontainers.image.title="demoapi_py" 
+LABEL org.opencontainers.image.description="FastAPI demo application" 
+LABEL org.opencontainers.image.source="https://github.com/rrlabz/demoapi_py"
+LABEL org.opencontainers.image.licenses="MIT"
 
 WORKDIR /app
 
